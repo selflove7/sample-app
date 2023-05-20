@@ -1,0 +1,815 @@
+{
+	"info": {
+		"_postman_id": "6e8be33e-821d-41ed-bda5-0e16ba36d507",
+		"name": "AfjalMao",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "address API",
+			"item": [
+				{
+					"name": "getAllAddressByUserId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/address/getByUserId/2e870859-7748-45a1-94b3-a9e701e5592e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"address",
+								"getByUserId",
+								"2e870859-7748-45a1-94b3-a9e701e5592e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAddressById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/address/getById/71d56309-b97e-4f22-8388-7cbaa89684c0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"address",
+								"getById",
+								"71d56309-b97e-4f22-8388-7cbaa89684c0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addAddress",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImU5MWE1MjgxLWUxZjktNDk2Zi1hMGIyLWIxMDBhMDY4NzA0MiIsImlzQWRtaW4iOiIxIiwibmFtZSI6Ik1vaGl0IFJhaiIsInBob25lTnVtYmVyIjoiNzg3MDU0MTA5OCIsImlhdCI6MTY2NzE2MTQwNCwiZXhwIjoxNjY3MjQ3ODA0fQ.tePlazMaD5itm0f4ya9x1UGhg3ofLj4HeotT-QH7TMg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"houseNo\":\"house no 286\",\n    \"area\":\"sarswati Kunj\",\n    \"city\":\"Gurgaon sector 53 dlf phase 5\",\n    \"pincode\":\"12022\",\n    \"addressType\":\"Home\",\n    \"receiverPhoneNumber\":\"7870541098\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/address/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"address",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAddress",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"receiverPhoneNumber\":\"9934408804\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/address/update/71d56309-b97e-4f22-8388-7cbaa89684c0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"address",
+								"update",
+								"71d56309-b97e-4f22-8388-7cbaa89684c0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAddress",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/address/delete/71d56309-b97e-4f22-8388-7cbaa89684c0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"address",
+								"delete",
+								"71d56309-b97e-4f22-8388-7cbaa89684c0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product API",
+			"item": [
+				{
+					"name": "getProductById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/product/72d5970a-d9db-44df-99df-d9438122ce22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"product",
+								"72d5970a-d9db-44df-99df-d9438122ce22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/product/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"product",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE5NWYyMzBkLTliZDEtNDcxOC1iZDdkLWMwZjk2NDA4ZGQxZSIsImlzQWRtaW4iOiIxIiwibmFtZSI6Ik1vaGl0IFJhaiIsInBob25lTnVtYmVyIjoiOTkzNDQwODgwNCIsImlhdCI6MTY2NzkxODEwNywiZXhwIjoxNjY4MDA0NTA3fQ.v7jGE2PFI_BSk_Lz8SJl_aI-R9-5244Ktfh5AsWj1Ns",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productName\":\"Masala Dosa10\",\n    \"productHalfPrice\":\"40\",\n    \"productFullPrice\":\"40\",\n    \"productRating\":\"3.3\",\n    \"productImage\":\"https://static.toiimg.com/thumb/54289752.cms?imgsize=495844&width=800&height=800\",\n    \"productDesc\":\"hello worlds how are your is the descriptiomn\",\n    \"productType\":\"Non veg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/product/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUxYTJiNTAxLWI2NTItNGVjMC05MjYxLTA3YjNiMmE0ZWRjYyIsImlzQWRtaW4iOiIxIiwibmFtZSI6Ik1vaGl0IFJhaiIsInBob25lTnVtYmVyIjoiMTIzNDU2Nzg5MCIsImlhdCI6MTY2NzE0NDExOCwiZXhwIjoxNjY3MjMwNTE4fQ.AovcO22xidCjeE-L9MB-aj-snTSj2sRavHW9NNB5jf8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/product/update/d9475ecf-2f0f-4357-b7c1-49d552bef2f6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"product",
+								"update",
+								"d9475ecf-2f0f-4357-b7c1-49d552bef2f6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUxYTJiNTAxLWI2NTItNGVjMC05MjYxLTA3YjNiMmE0ZWRjYyIsImlzQWRtaW4iOiIxIiwibmFtZSI6Ik1vaGl0IFJhaiIsInBob25lTnVtYmVyIjoiMTIzNDU2Nzg5MCIsImlhdCI6MTY2NzE0NDExOCwiZXhwIjoxNjY3MjMwNTE4fQ.AovcO22xidCjeE-L9MB-aj-snTSj2sRavHW9NNB5jf8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8002/api/product/delete/aa266181-9a9b-44c1-a4b2-d65148684358",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"product",
+								"delete",
+								"aa266181-9a9b-44c1-a4b2-d65148684358"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth API",
+			"item": [
+				{
+					"name": "Signout",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/signout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"signout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignIn",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"6207994778\",\n    \"password\":\"12345678\"\n   \n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Mohit Raj\",\n    \"phoneNumber\":\"9934408804\",\n    \"password\":\"Mr271232@\",\n    \"isAdmin\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterOTP",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept-encoding": true,
+							"user-agent": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"7870541098\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api//sendOTP/reisterOTP",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"",
+								"sendOTP",
+								"reisterOTP"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyOTP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"7870541098\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api//sendOTP/loginOTP",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"",
+								"sendOTP",
+								"loginOTP"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OTPRequest",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://2factor.in/API/V1/64078d0e-56a1-11ed-9c12-0200cd936042/SMS/+917870541098/AUTOGEN",
+							"protocol": "https",
+							"host": [
+								"2factor",
+								"in"
+							],
+							"path": [
+								"API",
+								"V1",
+								"64078d0e-56a1-11ed-9c12-0200cd936042",
+								"SMS",
+								"+917870541098",
+								"AUTOGEN"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "makeAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/auth/makeAdmin/26c34bc8-1a47-4798-a84b-cc89870a20db",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"auth",
+								"makeAdmin",
+								"26c34bc8-1a47-4798-a84b-cc89870a20db"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeFromAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/auth/removeAdmin/26c34bc8-1a47-4798-a84b-cc89870a20db",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"auth",
+								"removeAdmin",
+								"26c34bc8-1a47-4798-a84b-cc89870a20db"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Discount API",
+			"item": [
+				{
+					"name": "getAllDiscounts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImI4ZTdjMWNhLTQ2ODYtNGU4Yy04Y2Q0LWU5ODI2YTEwZDhhZSIsImlzQWRtaW4iOiIxIiwibmFtZSI6Ik1vaGl0IFJhaiIsInBob25lTnVtYmVyIjoiNzg3MDU0MTA5OCIsImlhdCI6MTY2NzI0NjY1OCwiZXhwIjoxNjY3MzMzMDU4fQ.SrbFq2YWlM2kUK2IxV5WZ_sfWzIlKFdZ-4sPUN0mFh8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8002/api/discount/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"discount",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDiscountById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImI4ZTdjMWNhLTQ2ODYtNGU4Yy04Y2Q0LWU5ODI2YTEwZDhhZSIsImlzQWRtaW4iOiIxIiwibmFtZSI6Ik1vaGl0IFJhaiIsInBob25lTnVtYmVyIjoiNzg3MDU0MTA5OCIsImlhdCI6MTY2NzI0NjY1OCwiZXhwIjoxNjY3MzMzMDU4fQ.SrbFq2YWlM2kUK2IxV5WZ_sfWzIlKFdZ-4sPUN0mFh8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8002/api/discount/c25fee10-5b50-4303-a60d-5387cf2108ef",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"discount",
+								"c25fee10-5b50-4303-a60d-5387cf2108ef"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddDiscount",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImI4ZTdjMWNhLTQ2ODYtNGU4Yy04Y2Q0LWU5ODI2YTEwZDhhZSIsImlzQWRtaW4iOiIxIiwibmFtZSI6Ik1vaGl0IFJhaiIsInBob25lTnVtYmVyIjoiNzg3MDU0MTA5OCIsImlhdCI6MTY2NzI0NjY1OCwiZXhwIjoxNjY3MzMzMDU4fQ.SrbFq2YWlM2kUK2IxV5WZ_sfWzIlKFdZ-4sPUN0mFh8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"discountType\":\"Flat/Absolute\",\n    \"discountValue\":101,\n    \"discountOnOrderAbove\":499\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/discount/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"discount",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editDiscount",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImI4ZTdjMWNhLTQ2ODYtNGU4Yy04Y2Q0LWU5ODI2YTEwZDhhZSIsImlzQWRtaW4iOiIxIiwibmFtZSI6Ik1vaGl0IFJhaiIsInBob25lTnVtYmVyIjoiNzg3MDU0MTA5OCIsImlhdCI6MTY2NzI0NjY1OCwiZXhwIjoxNjY3MzMzMDU4fQ.SrbFq2YWlM2kUK2IxV5WZ_sfWzIlKFdZ-4sPUN0mFh8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"discountType\":\"Percentage\",\n    \"discountValue\":13\n   \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/discount/update/0fbfaf73-a3ea-42b4-972b-f69041c1960b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"discount",
+								"update",
+								"0fbfaf73-a3ea-42b4-972b-f69041c1960b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDiscount",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImI4ZTdjMWNhLTQ2ODYtNGU4Yy04Y2Q0LWU5ODI2YTEwZDhhZSIsImlzQWRtaW4iOiIxIiwibmFtZSI6Ik1vaGl0IFJhaiIsInBob25lTnVtYmVyIjoiNzg3MDU0MTA5OCIsImlhdCI6MTY2NzI0NjY1OCwiZXhwIjoxNjY3MzMzMDU4fQ.SrbFq2YWlM2kUK2IxV5WZ_sfWzIlKFdZ-4sPUN0mFh8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8002/api/discount/delete/0fbfaf73-a3ea-42b4-972b-f69041c1960b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"discount",
+								"delete",
+								"0fbfaf73-a3ea-42b4-972b-f69041c1960b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDiscountByPriceRange",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImI4ZTdjMWNhLTQ2ODYtNGU4Yy04Y2Q0LWU5ODI2YTEwZDhhZSIsImlzQWRtaW4iOiIxIiwibmFtZSI6Ik1vaGl0IFJhaiIsInBob25lTnVtYmVyIjoiNzg3MDU0MTA5OCIsImlhdCI6MTY2NzI0NjY1OCwiZXhwIjoxNjY3MzMzMDU4fQ.SrbFq2YWlM2kUK2IxV5WZ_sfWzIlKFdZ-4sPUN0mFh8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"priceRange\":500\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/discount/discountByOrderPrice",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"discount",
+								"discountByOrderPrice"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order API",
+			"item": [
+				{
+					"name": "getOrderById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUxYTJiNTAxLWI2NTItNGVjMC05MjYxLTA3YjNiMmE0ZWRjYyIsImlzQWRtaW4iOiIxIiwibmFtZSI6Ik1vaGl0IFJhaiIsInBob25lTnVtYmVyIjoiMTIzNDU2Nzg5MCIsImlhdCI6MTY2NzE0NDExOCwiZXhwIjoxNjY3MjMwNTE4fQ.AovcO22xidCjeE-L9MB-aj-snTSj2sRavHW9NNB5jf8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8002/api/order/cbb1c1f8-fff2-4034-828f-37cc007e95bf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"order",
+								"cbb1c1f8-fff2-4034-828f-37cc007e95bf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllOrder",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUxYTJiNTAxLWI2NTItNGVjMC05MjYxLTA3YjNiMmE0ZWRjYyIsImlzQWRtaW4iOiIxIiwibmFtZSI6Ik1vaGl0IFJhaiIsInBob25lTnVtYmVyIjoiMTIzNDU2Nzg5MCIsImlhdCI6MTY2NzE0NDExOCwiZXhwIjoxNjY3MjMwNTE4fQ.AovcO22xidCjeE-L9MB-aj-snTSj2sRavHW9NNB5jf8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8002/api/order/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"order",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createOrder",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImU5MWE1MjgxLWUxZjktNDk2Zi1hMGIyLWIxMDBhMDY4NzA0MiIsImlzQWRtaW4iOiIxIiwibmFtZSI6Ik1vaGl0IFJhaiIsInBob25lTnVtYmVyIjoiNzg3MDU0MTA5OCIsImlhdCI6MTY2NzE2MTQwNCwiZXhwIjoxNjY3MjQ3ODA0fQ.tePlazMaD5itm0f4ya9x1UGhg3ofLj4HeotT-QH7TMg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\":[\"f7c9fde5-dca4-44f1-b473-6733fdaec49e\"],\n    \"addressId\":\"b93442d4-f7af-400e-8ace-dd057ad1202c\",\n    \"quantity\":\"2\",\n    \"modeOfPayment\":\"cash\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/order/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"order",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
